@@ -29,7 +29,7 @@
 2. 安装并启动MySQL，创建数据库`ocr`，使用src/models.py创建表`ocr_results`
 3. 安装依赖包：`pip install -r requirements.txt`
 4. 运行Kafka消费者: `python src/consumer.py`
-5启动FastAPI：
+5. 启动FastAPI：
 
 ```shell
 cd src
@@ -44,21 +44,25 @@ cuvicorn src.main:app --reload
 
 2. 未识别前的MySQL数据库中的数据
 
-![](https://s2.loli.net/2025/02/07/XkLzDQv71TW2nPm.png)
+![](https://s2.loli.net/2025/02/08/KFAgUVn8LlGDcob.png)
 
 3. 未识别前的OCR结果查看页面
 
-![](https://s2.loli.net/2025/02/07/OeCXQIH6qMphLGo.png)
+![](https://s2.loli.net/2025/02/08/zC6SqV9X73NtsQB.png)
 
 
 4. 识别后的MySQL数据库中的数据
 
-![](https://s2.loli.net/2025/02/07/swGvKxtBQDNeP9M.png)
+![](https://s2.loli.net/2025/02/08/Kwrsiu6cEtUL2vN.png)
 
 5. 识别后的OCR结果查看页面
 
-![](https://s2.loli.net/2025/02/07/jzrO6UMoCYk2BGR.png)
+![](https://s2.loli.net/2025/02/08/MI7JWE9ir5gL4ve.png)
 
 6. Kafka中的消息查看
 
-![](https://s2.loli.net/2025/02/07/PVZJslmyYHuIQFA.png)
+![](https://s2.loli.net/2025/02/08/rQEMuUTfsYo1bSW.png)
+
+7. 查看图片
+
+![](https://s2.loli.net/2025/02/08/93mTvKc4rx1jUhB.png)
