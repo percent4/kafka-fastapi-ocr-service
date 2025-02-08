@@ -13,7 +13,7 @@ from config import KAFKA_HOST, KAFKA_PORT, KAFKA_TOPIC
 
 db = SessionLocal()
 
-consumer = KafkaConsumer(KAFKA_TOPIC, bootstrap_servers=f'{KAFKA_HOST}:{KAFKA_PORT}')
+consumer = KafkaConsumer(KAFKA_TOPIC, bootstrap_servers=f'{KAFKA_HOST}:{KAFKA_PORT}', group_id="ocr-group")
 for message in consumer:
     start_time = time.time()
     file_uuid = message.key.decode()
