@@ -1,4 +1,6 @@
-本项目使用Kafka作为消息队列，FastAPI作Web框架，来模拟图片OCR实现。主要功能如下：
+> 本项目使用Kafka作为消息队列，FastAPI作Web框架，来模拟图片OCR实现。
+
+主要功能如下：
 
 1. 上传图片到FastAPI，FastAPI将图片发送到Kafka，同时将图片信息写入数据库，状态为未完成
 2. Kafka消费者消费图片，调用模拟的OCR识别结果，将结果更新至数据库，状态为已完成
@@ -19,9 +21,9 @@
 
 ## 后端代码
 
-- Web框架使用FastAPI实现
-- 数据库使用MySQL实现
-- 消息队列使用Kafka实现
+- Web框架采用FastAPI
+- 数据库采用MySQL
+- 消息队列采用Kafka
 
 ## 项目启动
 
@@ -33,7 +35,7 @@
 
 ```shell
 cd src
-cuvicorn src.main:app --reload
+uvicorn src.main:app --reload
 ```
 
 ## 项目效果
